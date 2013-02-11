@@ -1,0 +1,110 @@
+html,body
+{
+	background-color: #e6e6e6;
+	margin: 0;
+	font-family: Calibri,"Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+/* En-tête de chaque page */
+header
+{
+	display: block;
+	background-color: #000;
+	color: #e6e6e6;
+	margin-bottom: 6px;
+	padding-left: 1em;
+	font-family: "Courier New", Courier, mono;
+}
+
+/* Contenu principal de chaque page */
+container
+{
+	display: block;
+	margin: 1em;
+}
+
+/* Bandeau de navigation */
+navbar
+{
+	font-size: 1.1em;
+}
+
+/* Affichage du chemin vers le dossier courant */
+breadcrumb
+{
+	font-size: 0.9em;
+}
+
+/* Les FORMULAIRES */
+form
+{
+	display: inline; /* pour éviter qu'un linebreak soit inséré après le tag </form> */
+	margin: 0px;
+	font-size: 0.9em;
+}
+
+/* LIENS */
+a
+{
+	text-decoration: none;
+	font-size: 1.3em;
+}
+
+/* LISTE : tableau */
+.list-table
+{
+	width: 100%;
+	font-size: 0.9em;
+}
+
+/* LISTE : ligne d'en-tête */
+.list-header
+{
+	font-weight: bold;
+}
+
+/* LISTE : cellule */
+.list-cell
+{
+	border-right: 1px dotted gray;
+	padding: 5px;
+}
+
+/* LISTE : statistiques (dernière ligne) */
+.stats
+{
+	border-top: 1px dotted gray;
+}
+
+/* COULEUR ALTERNTIVE 1 */
+.alt1
+{
+	background-color: #ccc;
+}
+
+/* COULEUR ALTERNATIVE 2 */
+.alt2
+{
+	background-color: #d8d8d8;
+}
+
+/* TREE : Racine de l'arbre */
+ol.tree
+{
+	list-style-type: none;
+	font-size: 10pt;
+}
+
+/* TREE : dossier */
+li.tree-folder
+{
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+/* TREE : fichier */
+li.tree-file
+{
+	border-left: 1px solid #666;
+	padding-left: 5px;
+}

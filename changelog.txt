@@ -1,0 +1,46 @@
+[ Version 1.3a - patch - 08/06/2008 ]
+Affichage du chemin complet dans le breadcrumb
+Liens vers les dossiers parents dans le breadcrumb
+
+[ Version 1.3 - release - 07/06/2008 ]
+Fonctions d'administration.
+Effacement des fichiers.
+
+[ Version 1.2a - patch - 07/06/2008 ]
+Correction d'un bug provoquant dans certains cas l'association des méta-données d'un fichier à un autre fichier et vice-versa.
+
+[ Version 1.2 - release - 23/05/2008]
+Envoi de plusieurs fichiers en même temps ("multiple upload"), avec les mêmes méta-données.
+Spinner pendant l'envoi des fichiers (qui semble ne pas fonctionner lorsqu'on soumet le formulaire par javascript ??)
+
+[ Version 1.1d - patch - 22/05/2008 ]
+Ajout des statistiques : nombre de fichiers par dossier et taille totale des fichiers du dossier
+Correction d'un bug concernant les liens vers les dossiers dans l'arborescence
+Le bouton de validation du formulaire d'upload est désactivé pendant la durée de l'envoi (éviter les doublons)
+
+[Version 1.1c - patch - 22/05/2008 ]
+Modifications du CSS
+Amélioration de l'affichage de l'arborescence
+
+[ Version 1.1b - patch - 21/05/2008 ]
+Les chemins sont désormais transmis par formulaire (ils ne sont plus affichés dans l'URL)
+
+[ Version 1.1a - release - 21/05/2008 ]
+Affichage de l'arborescence complète du système de fichiers
+
+[ Version 1.0 - release - 21/05/2008 ]
+Aucun bug connu.
+
+[ Version 0.3a - alpha - 20/05/2008 ]
+Correction d'un bug lorsque le dossier ne contient aucun fichier
+Correction d'un bug lors de l'upload du premier fichier d'un dossier
+
+[ Version 0.2a - alpha - 20/05/2008 ]
+Génération automatique des méta-données lorsque les fichiers sont mis en ligne par FTP
+Mise à jour automatique des méta-données à chaque visite d'un dossier (retrait des méta-données des fichiers absents, création des méta-données des nouveaux fichiers)
+
+[ Version 0.1a - alpha - 19/05/2008 ]
+Mécanisme d'affichage des fichiers et des dossiers dans une liste
+Mécanisme de méta-données
+Création de dossiers
+Upload de fichiers
