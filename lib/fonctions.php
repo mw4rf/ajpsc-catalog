@@ -321,7 +321,8 @@ function BrowseFiles($chemin = "",$showdirs=false,$nometa=false)
 							{
 								// Est-ce la bonne ligne ?
 								$data = fgets($idx, 4096);
-								if(ereg($fichier,$data))		{ $ligne = $compteur; break; }
+								if(strpos($data,$fichier) !== false)
+                                    { $ligne = $compteur; break; }
 								// Incrémentation du compteur
 								$compteur++;
 							}
@@ -413,7 +414,7 @@ function readMeta($dir)
 
 	// Lecture du fichier
 	$fichier = $dir.'/dir.cfg'; // ouverture du fichier
-	$lignes = split("\n", file_get_contents($fichier));
+	$lignes = explode("\n", file_get_contents($fichier));
 
 	// Traitement de chaque ligne
 	$i = 0;
@@ -522,7 +523,7 @@ function refreshMeta($dir)
 
 	// Ouvre le fichier d'index du dossier, dir.cfg
 	$fichier = $dir."/dir.cfg";
-	$lignes = split("\n", file_get_contents($fichier));
+	$lignes = explode("\n", file_get_contents($fichier));
 
 	// Récupère les hash des fichiers dans l'index
 	$y = 0;
@@ -631,7 +632,8 @@ function rmvMeta($line,$dir)
 	while (!feof ($fichier))          // parcourir le fichier
 	{
 		$data = fgets($fichier, 4096);
-		if(ereg($line,$data))		{ $data = ""; } // si la ligne est présente, on la remplace par du vide
+		if(strpos($data,$line) !== false)
+            { $data = ""; } // si la ligne est présente, on la remplace par du vide
 		if($data != "")				$result .= $data; // on ajoute une ligne pleine ou une ligne vide qui résulte du if précédent
 	}
 
