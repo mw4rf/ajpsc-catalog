@@ -122,7 +122,7 @@ foreach($FILES as $key=>$subArray)
 	{
 		// Construction de l'URL de téléchargement du fichier
 		if($subArray['@D']{0} == '.') $path = substr($subArray['@D'],1); else $path = $subArray['@D'];
-		$dlpath = $path."/".$subArray['@F'];
+		$dlpath = $_config['dl'].'/'.$path."/".$subArray['@F'];
 
 		// Affichage
 		echo "<tr class=\"alt$indice\">\n";
