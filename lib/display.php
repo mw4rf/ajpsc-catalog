@@ -109,7 +109,7 @@ if($FILES){ // la fonction BrowseFiles renvoie false s'il n'y a rien à afficher 
 	<tr class="list-header">
 		<td><!--// download -->&nbsp;</td>
 		<?php foreach($_config['fields-display'] as $key) echo "\t<td>".$_config['fields-name'][$key]."</td>\n"; ?>
-		<?php if(isadmin()) { ?><td><!--// ADMIN ONLY -->RM</td><?php } ?>
+		<?php if(isadmin()) { ?><td><!--// ADMIN ONLY -->Suppr.</td><?php } ?>
 	</tr>
 <?php
 // Initialisation
@@ -153,7 +153,7 @@ foreach($FILES as $key=>$subArray)
 					."\t\t\t<input type=\"hidden\" name=\"a2\" value=\"RM\" />\n"
 					."\t\t\t<input type=\"hidden\" name=\"dir\" value=\"".urlencode($subArray['@D'])."\" />\n"
 					."\t\t\t<input type=\"hidden\" name=\"file\" value=\"".urlencode($subArray['@F'])."\" />\n"
-					."\t\t\t<a href=\"#\" onclick=\"javascript:soumettre('rm_".md5($subArray['@F'])."')\">RM</a>\n"
+					."\t\t\t<a href=\"#\" onclick=\"javascript:soumettre('rm_".md5($subArray['@F'])."')\">Suppr.</a>\n"
 					."\t\t</form>\n"
 					."\t</td>\n";
 			echo "<tr>\n";

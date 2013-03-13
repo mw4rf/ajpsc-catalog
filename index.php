@@ -1,5 +1,7 @@
 <?php
 //error_reporting(0); // E_ALL
+// Session (pour admin)
+session_start();
 // Inclusions
 include_once('lib/config.php');
 include_once('lib/fonctions.php');
@@ -33,6 +35,8 @@ include_once('lib/fonctions.php');
 <header>
 	AJPSC::Catalog 1.3b <small>(&copy; 2007-<?php echo date('Y'); ?> Guillaume Florimond)</small>
 	&nbsp;&nbsp;<a href="lib/aide/index.html">Aide</a>
+    &nbsp;&nbsp;<a href="lib/admin/auth.php">Admin.</a>
+    <?php if(isadmin()) { ?> (Connecté en tant qu'administrateur) <?php } ?>
 </header>
 
 <container>
